@@ -1,39 +1,39 @@
 # Bioinformatics Utils
 
-Домашнее задание № 4 по Python.
+Homework 4 for Python.
 
-В работе написаны функции для обработки файлов FASTQ, FASTA и результатов BLAST.
+This project contains functions for working with FASTQ, FASTA and BLAST result files.
 
-## Требования
+## Requirements
 
-Для работы нужен Python 3. Дополнительные библиотеки не требуются.
+Python 3 is required. No additional libraries are needed.
 
-## Функции
+## Functions
 
 ### filter_fastq()
 
-Функция фильтрует FASTQ-файл по GC-составу, длине последовательностей и среднему качеству.
+This function filters FASTQ reads by GC content, sequence length and average quality.
 
-Можно указать нужные границы для каждого параметра. Результат сохраняется в папку `filtered`.
+The limits for each parameter can be changed. The result is saved in the `filtered` folder.
 
 ### convert_multiline_fasta_to_oneline()
 
-Функция преобразует многострочный FASTA-файл в однострочный. Заголовки сохраняются, а каждая последовательность записывается в одну строку.
+This function converts a multiline FASTA file into a one-line FASTA file. The headers are kept, and each sequence is written on one line.
 
 ### parse_blast_output()
 
-Функция обрабатывает результаты BLAST и выбирает первое совпадение для каждого запроса.
+This function reads BLAST results and selects the first hit for each query.
 
-Полученные описания сортируются по алфавиту и записываются в отдельный файл.
+The descriptions are sorted alphabetically and saved in a separate file.
 
-## Использование
+## Usage
 
-Для запуска нужно импортировать нужную функцию из `bioinformatics_utils.py` и указать входной и выходной файлы. Для фильтрации FASTQ также можно задать параметры отбора.
+Import the required function from `bioinformatics_utils.py` and provide the input and output file names. Filtering parameters can also be set for FASTQ files.
 
-## Структура проекта
+## Project structure
 
-`bioinformatics_utils.py` содержит основные функции.
+`bioinformatics_utils.py` contains the main functions.
 
-`helpers/fastq.py` содержит вспомогательные функции для работы с FASTQ.
+`helpers/fastq.py` contains helper functions for FASTQ filtering.
 
-`helpers/bio_files.py` содержит вспомогательную функцию для обработки BLAST.
+`helpers/bio_files.py` contains a helper function for BLAST results.
