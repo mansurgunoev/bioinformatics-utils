@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+example_fastq.fastq
+example_multiline_fasta.fasta
+example_blast_results.txt
+
+oneline.fasta
+blast_best_hits.txt
+filtered/
